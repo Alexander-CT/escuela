@@ -13,7 +13,7 @@
         </div>
         <div class="newAlumno"> 
             <ul><li><a onclick="myADD()">ADD</a></li></ul>
-            <iframe id="addframe" style="visibility: hidden;"></iframe>
+            <iframe id="addframe"></iframe>
         </div>
         <div class="Registro">
         

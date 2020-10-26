@@ -62,3 +62,6 @@ li a:hover:not(.active) {
 /* .addframe{
     background-color: #181A1B;
 } */
+#addframe{
+    visibility: hidden;
+}
