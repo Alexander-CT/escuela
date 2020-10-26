@@ -13,16 +13,17 @@
         </div>
         <div class="newAlumno"> 
             <ul><li><a onclick="myADD()">ADD</a></li></ul>
-            <iframe id="addframe" style="visibility: hidden;"></iframe>
+            <iframe id="addframe" src="" width="100%" height="100%"></iframe>
         </div>
         <div class="Registro">
-        
+            <iframe id="regframe" src="F_Alumno_Lista.php" width="100%" height="100%"></iframe>
         </div>
     </div>
     <script>
         function myADD() {
-            document.getElementById("myframe").css=('visibility','visible');
-            document.getElementById("myframe").src = "F_Aliumno_insertar.php";
+            document.getElementById("addframe").src = "F_Alumno_insertar.php";
+            //document.getElementById("addframe").style.css('height','500px');
+            //text cat http://placekitten.com/g/400/350
         }
     </script>
 </body>

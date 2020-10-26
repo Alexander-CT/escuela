@@ -20,11 +20,11 @@
             <iframe id="myframe" src="f_ini.php"></iframe>
         </div>
     </div>
-    
+
     
     <script>
     function myIni() {
-        document.getElementById("myframe").src = "http://placekitten.com/g/400/350";
+        document.getElementById("myframe").src = "f_ini.php";
     }
     function myRegiA() {
         document.getElementById("myframe").src = "f_regiAlumno.php";
