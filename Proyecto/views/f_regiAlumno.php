@@ -13,7 +13,12 @@
         </div>
         <div class="newAlumno"> 
             <ul><li><a onclick="myADD()">ADD</a></li></ul>
-            <iframe id="addframe"></iframe>
+            <?php
+            $addf = 'addframe';
+            foreach($array_expression as $key => $value){
+                echo "<iframe id='${addf}'></iframe>";
+            }
+            ?>
         </div>
         <div class="Registro">
             <iframe id="regframe" src="F_Alumno_Lista.php" width="100%" height="100%"></iframe>
