@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/Profesor_insertar.css" />
     <title>Insertar profesor</title>
 </head>
 <body>
@@ -23,15 +25,28 @@ if(isset($_POST['btnRegistrar'])){ //Registrar
     $objA->registrar($dni,$fi);
 }else {
 ?>
-    <form class="formP" method="post" action="frmInsertar.php">
-        DNI               : <input type="text" name="dni"/> </br>
-        Nombre 1          : <input type="text" name="nomA"/> 
-        Nombre 2          : <input type="text" name="nomB"/> </br>
-        Ap.Paterno        : <input type="text" name="apeP"/>
-        Ap.Materno        : <input type="text" name="apeM"/> </br>
-        Fecha Nacimiento  : <input type="text" name="fn"/> </br>
-
-        Fecha Contratacion: <input type="text" name="fi"/>
+    <form class="formP form_grid" method="post" action="frmInsertar.php">
+        <div class="grids">
+            <label for="dni" >DNI: </label><input type="text" name="dni"/>
+        </div>
+        <div class="grids">
+            <label for="nomA" >Nombre 1: </label><input type="text" name="nomA"/> 
+        </div>
+        <div class="grids">
+            <label for="nomB" >Nombre 2: </label><input type="text" name="nomB"/>
+        </div>
+        <div class="grids">
+            <label for="apeP" >Ap.Paterno: </label><input type="text" name="apeP"/>
+        </div>
+        <div class="grids">
+            <label for="apeM" >Ap.Materno: </label><input type="text" name="apeM"/>
+        </div>
+        <div class="grids">
+            <label for="fn" >Fecha Nacimiento: </label><input type="text" name="fn"/>
+        </div>
+        <div class="grids">
+            <label for="fi">Fecha Contratacion: </label><input type="text" name="fi"/>
+        </div>
         <input type="submit" name="btnRegistrar" value="Registrar"/>
     </form>
 <?php
