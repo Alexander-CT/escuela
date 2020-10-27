@@ -2,7 +2,7 @@
 class conexion { // Implementación de Singleton
     private static $instancia = null;
     public function __construct() {
-        $dsn = 'mysql:dbname=proyectobd;host=localhost'; 
+        $dsn = 'mysql:proyectodb=proyectobd;host=localhost'; 
         $user = 'root'; 
         $password = ''; 
         try {
