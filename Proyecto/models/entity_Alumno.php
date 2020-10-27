@@ -11,10 +11,10 @@ class Alumno {
     }
 
     public function setFechaIn($FechaIn){
-        $this->id = $id;
+        $this->FechaIn = $FechaIn;
     }
     public function getFechaIn(){
-        return $this->id;
+        return $this->FechaIn;
     }
 }
 ?>
