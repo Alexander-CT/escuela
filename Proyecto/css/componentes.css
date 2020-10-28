@@ -30,6 +30,7 @@
     height: 100%; */
     padding: 10px 25px;
     font-size: 30px;
+    font-weight: bold;
     text-shadow:
 		0 0 5px rgba(0,178,255,1),
 		0 0 10px rgba(0,178,255,1);
