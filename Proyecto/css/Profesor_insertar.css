@@ -13,10 +13,84 @@ div{
     padding: 1em;
     margin: 0;
 }
+#btnRegistrar{
+    grid-area: btn_registrar;
+    /* width: 25px; */
+    height: 50px;
+}
+
+#lbl_dni{
+    grid-area: lbl_dni;
+}
+#input_dni{
+    grid-area: input_dni;
+}
+
+#lbl_nomA{
+    grid-area: lbl_nomA;
+}
+#input_nomA{
+    grid-area: input_nomA;
+}
+
+#lbl_nomB{
+    grid-area: lbl_nomB;
+}
+#input_nomB{
+    grid-area: input_nomB;
+}
+
+#lbl_apeP{
+    grid-area: lbl_apeP;
+}
+#input_apeP{
+    grid-area: input_apeP;
+}
+
+#lbl_apeM{
+    grid-area: lbl_apeM;
+}
+#input_apeM{
+    grid-area: input_apeM;
+}
+
+#lbl_fn{
+    grid-area: lbl_fn;
+}
+#input_fn{
+    grid-area: input_fn;
+}
+
+#lbl_fi{
+    grid-area: lbl_fi;
+}
+#input_fi{
+    grid-area: input_fi;
+}
 .form_grid{
     display: grid;
+    grid-column: auto;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: repeat(8,10fr); */
     grid-template-rows: repeat(7,25px);
     /* grid-template-columns: repeat(2, 1fr); */
     border: none;
     gap: 2em;
+    padding: 25px;
+    align-items: stretch;
+    /* grid-template-rows: repeat(7,5px); */
+    grid-template-areas:
+        "lbl_dni input_dni"
+        "lbl_nomA input_nomA"
+        "lbl_nomB input_nomB"
+        "lbl_apeP input_apeP"
+        "lbl_apeM input_apeM"
+        "lbl_fn input_fn"
+        "lbl_fi input_fi"
+        "btn_registrar btn_registrar";
+}
+
+.fila:hover,.resaltar{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
 }

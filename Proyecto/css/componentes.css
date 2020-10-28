@@ -1,0 +1,47 @@
+.btn_estilo1 {
+    list-style: none;
+    outline: none;
+    margin: 0;
+    /* padding: 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    background: #031321;
+    font-family: consolas;
+    position: relative;
+    display: inline-block;
+    padding: auto;
+    color: #2196f3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    /* 0.2 */
+    border: none;
+    width: auto;
+}
+.btn_estilo1:hover{
+    /* bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%; */
+    padding: 10px 25px;
+    font-size: 30px;
+    text-shadow:
+		0 0 5px rgba(0,178,255,1),
+		0 0 10px rgba(0,178,255,1);
+    background: linear-gradient(360deg, transparent, #2f88d146);
+}
+.btn_estilo1:active {
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 0;
+}
+
+input{
+    background-color: #eeeeee;
+}

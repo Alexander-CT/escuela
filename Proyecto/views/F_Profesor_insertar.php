@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/componentes.css" />
     <link rel="stylesheet" href="../css/Profesor_insertar.css" />
     <title>Insertar profesor</title>
 </head>
@@ -26,28 +27,29 @@ if(isset($_POST['btnRegistrar'])){ //Registrar
 }else {
 ?>
     <form class="formP form_grid" method="post" action="frmInsertar.php">
-        <div class="grids">
-            <label for="dni" >DNI: </label><input type="text" name="dni"/>
-        </div>
-        <div class="grids">
-            <label for="nomA" >Nombre 1: </label><input type="text" name="nomA"/> 
-        </div>
-        <div class="grids">
-            <label for="nomB" >Nombre 2: </label><input type="text" name="nomB"/>
-        </div>
-        <div class="grids">
-            <label for="apeP" >Ap.Paterno: </label><input type="text" name="apeP"/>
-        </div>
-        <div class="grids">
-            <label for="apeM" >Ap.Materno: </label><input type="text" name="apeM"/>
-        </div>
-        <div class="grids">
-            <label for="fn" >Fecha Nacimiento: </label><input type="text" name="fn"/>
-        </div>
-        <div class="grids">
-            <label for="fi">Fecha Contratacion: </label><input type="text" name="fi"/>
-        </div>
-        <input type="submit" name="btnRegistrar" value="Registrar"/>
+        <label class="fila" id="lbl_dni" for="dni" >DNI: </label>
+        <input class="input_txt" id="input_dni" type="text" name="dni"/>
+
+        <label class="fila" id="lbl_nomA" for="nomA" >Nombre 1: </label>
+        <input class="input_txt" id="input_nomA" type="text" name="nomA"/>
+
+        <label class="fila" id="lbl_nomB" for="nomB" >Nombre 2: </label>
+        <input class="input_txt" id="input_nomB" type="text" name="nomB"/>
+
+        <label class="fila" id="lbl_apeP" for="apeP" >Ap. Paterno: </label>
+        <input class="input_txt" id="input_apeP" type="text" name="apeP"/>
+
+        <label class="fila" id="lbl_apeM" for="apeM" >Ap. Materno: </label>
+        <input class="input_txt" id="input_apeM" type="text" name="apeM"/>
+
+        <label class="fila" id="lbl_fn" for="fn" >Fecha Nacimiento: </label>
+        <input class="input_txt" id="input_fn" type="text" name="fn"/>
+
+        <label class="fila" id="lbl_fi" for="fi">Fecha Contratacion: </label>
+        <input class="input_txt" id="input_fi" type="text" name="fi"/>
+
+        <button id="btnRegistrar" class="btn_estilo1" name="btnRegistrar">Registrar</button>
+        <!-- <input type="submit" name="btnRegistrar" value="Registrar"/> -->
     </form>
 <?php
 }
