@@ -28,26 +28,79 @@ if(isset($_POST['btnRegistrar'])){ //Registrar
 ?>
     <form class="formP form_grid" method="post" action="frmInsertar.php">
         <label class="fila" id="lbl_dni" for="dni" >DNI: </label>
-        <input class="input_txt" id="input_dni" type="text" name="dni"/>
+        <input
+            class="input_txt"
+            id="input_dni"
+            type="text"
+            placeholder="Ingresar DNI"
+            name="dni"
+        />
+
+        <hr id="sep1">
 
         <label class="fila" id="lbl_nomA" for="nomA" >Nombre 1: </label>
-        <input class="input_txt" id="input_nomA" type="text" name="nomA"/>
+        <input
+            class="input_txt"
+            id="input_nomA"
+            type="text"
+            placeholder="Ingresar primer nombre"
+            name="nomA"/>
 
+        <hr id="sep2">
+        
         <label class="fila" id="lbl_nomB" for="nomB" >Nombre 2: </label>
-        <input class="input_txt" id="input_nomB" type="text" name="nomB"/>
+        <input
+            class="input_txt"
+            id="input_nomB"
+            type="text"
+            placeholder="Ingresar segundo nombre"
+            name="nomB"
+        />
+
+        <hr id="sep3">
 
         <label class="fila" id="lbl_apeP" for="apeP" >Ap. Paterno: </label>
-        <input class="input_txt" id="input_apeP" type="text" name="apeP"/>
+        <input
+            class="input_txt"
+            id="input_apeP"
+            type="text"
+            placeholder="Ingresar apellido paterno"
+            name="apeP"
+        />
+
+        <hr id="sep4">
 
         <label class="fila" id="lbl_apeM" for="apeM" >Ap. Materno: </label>
-        <input class="input_txt" id="input_apeM" type="text" name="apeM"/>
+        <input
+            class="input_txt"
+            id="input_apeM"
+            type="text"
+            placeholder="Ingresar apellido materno"
+            name="apeM"
+        />
+
+        <hr id="sep5">
 
         <label class="fila" id="lbl_fn" for="fn" >Fecha Nacimiento: </label>
-        <input class="input_txt" id="input_fn" type="text" name="fn"/>
+        <input
+            class="input_txt"
+            id="input_fn"
+            type="text"
+            placeholder="Ingresar fecha de nacimiento"
+            name="fn"
+        />
+
+        <hr id="sep6">
 
         <label class="fila" id="lbl_fi" for="fi">Fecha Contratacion: </label>
-        <input class="input_txt" id="input_fi" type="text" name="fi"/>
-
+        <input
+            class="input_txt"
+            id="input_fi"
+            type="text"
+            placeholder="Ingresar fecha de contratacion"
+            name="fi"
+        />
+        
         <button id="btnRegistrar" class="btn_estilo1" name="btnRegistrar">Registrar</button>
         <!-- <input type="submit" name="btnRegistrar" value="Registrar"/> -->
     </form>

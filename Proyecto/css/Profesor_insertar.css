@@ -1,5 +1,6 @@
 label{
     color: white;
+    padding-right: 25px;
     /* padding: 0;
     margin: 0; */
 }
@@ -67,25 +68,60 @@ div{
 #input_fi{
     grid-area: input_fi;
 }
+
+/*Separadores*/
+#sep1{
+    grid-area: sep1;
+}
+#sep2{
+    grid-area: sep2;
+}
+#sep3{
+    grid-area: sep3;
+}
+#sep4{
+    grid-area: sep4;
+}
+#sep5{
+    grid-area: sep5;
+}
+#sep6{
+    grid-area: sep6;
+}
+
+
+
+
+
 .form_grid{
     display: grid;
     grid-column: auto;
-    grid-template-columns: 1fr;
+    grid-template-columns: 0.5fr 1fr;
     /* grid-template-rows: repeat(8,10fr); */
-    grid-template-rows: repeat(7,25px);
+    grid-template-rows: repeat(7,25px 0fr);
     /* grid-template-columns: repeat(2, 1fr); */
     border: none;
-    gap: 2em;
-    padding: 25px;
+    /* border-color: white; */
+    /* gap: 1em; */
+    row-gap: 1em;
+    column-gap: none;
+
+    padding: 27px;
     align-items: stretch;
     /* grid-template-rows: repeat(7,5px); */
     grid-template-areas:
         "lbl_dni input_dni"
+        "sep1 sep1"
         "lbl_nomA input_nomA"
+        "sep2 sep2"
         "lbl_nomB input_nomB"
+        "sep3 sep3"
         "lbl_apeP input_apeP"
+        "sep4 sep4"
         "lbl_apeM input_apeM"
+        "sep5 sep5"
         "lbl_fn input_fn"
+        "sep6 sep6"
         "lbl_fi input_fi"
         "btn_registrar btn_registrar";
 }
@@ -93,4 +129,11 @@ div{
 .fila:hover,.resaltar{
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
+}
+hr{
+    border: none;
+    height: 2px;
+    width: 90%;
+    background-color: #181A1B;
+    margin: 0 auto 0 auto;
 }
